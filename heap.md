@@ -47,7 +47,7 @@ class Heap(object):
         """
         Floyd algorithm, runs in O(n) time
         """
-        for i in range(len(self._array) / 2, 0):
+        for i in range(len(self._array) / 2, 0, -1):
             self._siftdown(i)
 
     def peek(self):
